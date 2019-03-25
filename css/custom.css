@@ -50,19 +50,22 @@ body {
     width: 120px;
     text-decoration: none;
     letter-spacing: 0.05em;
-    -webkit-transition: color 500ms;
-    -o-transition: color 500ms;
-    transition: color 500ms;
+    -webkit-transition: 250ms;
+    -o-transition: 250ms;
+    transition: 250ms;
 }
 
 .nav-link:hover {
-    color: #3D3C68;
+    color: #3D3C68 !important;
+    border-left: 3px solid #4CB5FF;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .active {
     color: #3D3C68 !important;
     border-left: 3px solid #4CB5FF;
-    line-height: 20px;
     padding-left: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -333,7 +336,7 @@ body {
 }
 
 .container {
-    padding-top: 270px;
+    padding-top: 210px;
     padding-left: 400px;
     padding-right: 100px;
 }
