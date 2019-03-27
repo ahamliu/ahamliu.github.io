@@ -293,7 +293,7 @@ p {
 }
 
 .h-title2 {
-    font-size: 50px;
+    font-size: 60px;
     color: #3D3C68;
     font-weight: 800;
     margin-top: 0px;
@@ -302,7 +302,7 @@ p {
 
 .h-title3 {
     font-weight: 600;
-    font-size: 50px;
+    font-size: 40px;
     color: #3D3C68;
     margin-top: 0px;
     margin-bottom: 8px;
@@ -355,6 +355,7 @@ p {
 .row {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .col-1 {
@@ -496,6 +497,7 @@ p {
 }
 
 .s-area {
+    position: relative;
     width: 60%;
     margin: 0 auto;
 }
