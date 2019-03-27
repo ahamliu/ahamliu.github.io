@@ -4,6 +4,11 @@ body {
     overflow-x: hidden;
 }
 
+p {
+    color: #6C6B7B;
+    font-size: 18px;
+}
+
 /* Nav */
 
 .navbar-brand {
@@ -56,15 +61,21 @@ body {
 }
 
 .nav-link:hover {
-    color: #3D3C68 !important;
-    border-left: 3px solid #4CB5FF;
+    color: #3D3C68;
     padding-left: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
 }
 
+.nav-link:active {
+    color: #8483af;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
 .active {
-    color: #3D3C68 !important;
+    color: #3D3C68;
     border-left: 3px solid #4CB5FF;
     padding-left: 16px;
     padding-top: 8px;
@@ -90,6 +101,9 @@ body {
     height: 896px;
     width: 100%;
 }
+
+
+/* Home Background Area */
 
 #home-background {
     position: absolute;
@@ -270,7 +284,6 @@ body {
   }
 }
 
-
 .h-title1 {
     font-size: 30px;
     font-weight: 400;
@@ -298,8 +311,6 @@ body {
 .h-desc {
     margin-top: 20px;
     line-height: 28px;
-    color: #6C6B7B;
-    font-size: 18px;
     border-left: 4px solid #4CB5FF;
     padding-left: 20px;
 }
@@ -462,4 +473,145 @@ body {
     0% {opacity: 0}
     50% {opacity: 1}
     100% {opacity: 0}
+}
+
+/* Skills Area */
+
+#skills {
+    position: relative;
+    height: 580px;
+    width: 100%;
+    background-color: #F9FAFB;
+}
+
+/* #skills-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}  if I want to use a background image in the future */
+
+.s-container {
+    height: 100%;
+    width: 100%;
+}
+
+.s-area {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.section-heading {
+    color: #3D3C68;
+    display: inline-block;
+    font-size: 21px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.title-light {
+    font-weight: 600;
+    margin: 0;
+}
+
+.title-bold {
+    font-weight: 800;
+    margin: 0;
+    display: inline-block;
+}
+
+.line-shape {
+    width: 25px;
+    height: 4px;
+    background-color: #4CB5FF;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.s-desc {
+    margin-top: 5px;
+}
+
+.single-skill {
+    background-color: #fff;
+    border: 1px solid #eff2f6;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    width: 173px;
+    height: 287px;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.02);
+    margin-bottom: 30px;
+}
+
+.skill-desc {
+    color: #726a84;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+#skill1 {
+    border-bottom: 5px solid rgba(156,208,255, 1);
+    -webkit-transition-duration: 800ms;
+    -o-transition-duration: 800ms;
+    transition-duration: 800ms;
+}
+
+#skill2 {
+    border-bottom: 5px solid rgba(255,182,182, 1);
+    -webkit-transition-duration: 800ms;
+    -o-transition-duration: 800ms;
+    transition-duration: 800ms;
+}
+
+#skill3 {
+    border-bottom: 5px solid rgba(246,213,177, 1);
+    -webkit-transition-duration: 800ms;
+    -o-transition-duration: 800ms;
+    transition-duration: 800ms;
+}
+
+#skill4 {
+    border-bottom: 5px solid rgba(149,219,202, 1);
+    -webkit-transition-duration: 800ms;
+    -o-transition-duration: 800ms;
+    transition-duration: 800ms;
+}
+
+#skill1:hover, #skill2:hover, #skill3:hover, #skill4:hover {
+    transform: translateY(-10px);
+}
+
+.text-center{
+    text-align: center!important;
+}
+
+.icon {
+    height: 70px;
+    width: 70px;
+    background-color: #E8E8E8;
+    border-radius: 50%;
+    margin: auto;
+}
+
+h4 {
+    color: #3D3C68;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* About Me Area */
+#about {
+    position: relative;
+    height: 580px;
+    width: 100%;
+}
+
+.a-container {
+    height: 100%;
+    width: 100%;
 }
