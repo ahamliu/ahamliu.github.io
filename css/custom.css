@@ -251,13 +251,6 @@ p {
     padding-bottom: 150px;
 }
 
-.fixed-ml {
-    position: fixed;
-    left: 0;
-    top: calc(50% - 128px);
-    z-index: 99;
-}
-
 .bio-img {
     padding-left: 50px;
 }
@@ -317,7 +310,7 @@ p {
 
 .contact-button {
     background-color: #4CB5FF;
-    color: #fff !important;
+    color: #fff;
     font-weight: 600;
     border: none;
     height: 50px;
@@ -338,21 +331,19 @@ p {
     background-color: #6FC3FF;
 }
 
-.container-fluid {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .container {
     padding-top: 210px;
-    padding-left: 400px;
+    padding-left: 120px;
     padding-right: 100px;
 }
 
 .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.s-row {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -363,11 +354,11 @@ p {
 }
 
 .col-2 {
-    flex-grow: 16.6%;
+    flex-basis: 16.6%;
 }
 
 .col-3 {
-    flex-grow: 25%;
+    flex-basis: 25%;
 }
 
 .col-4 {
@@ -479,10 +470,10 @@ p {
 /* Skills Area */
 
 #skills {
-    position: relative;
-    height: 580px;
+    height: auto;
     width: 100%;
     background-color: #F9FAFB;
+    padding-bottom: 30px;
 }
 
 /* #skills-background {
@@ -492,13 +483,8 @@ p {
 }  if I want to use a background image in the future */
 
 .s-container {
-    height: 100%;
-    width: 100%;
-}
-
-.s-area {
     position: relative;
-    width: 60%;
+    width: 58%;
     margin: 0 auto;
 }
 
@@ -534,23 +520,19 @@ p {
 }
 
 .single-skill {
+    height: 100%;
+    width: 125%;
     background-color: #fff;
     border: 1px solid #eff2f6;
-    padding-top: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    width: 173px;
-    height: 287px;
-    margin-left: 15px;
-    margin-right: 15px;
+    box-sizing: border-box;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.02);
-    margin-bottom: 30px;
 }
 
 .skill-desc {
     color: #726a84;
-    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 0.85em;
     font-weight: 300;
     line-height: 1.5rem;
 }
@@ -588,7 +570,7 @@ p {
 }
 
 .text-center{
-    text-align: center!important;
+    text-align: center;
 }
 
 .icon {
@@ -597,6 +579,10 @@ p {
     background-color: #E8E8E8;
     border-radius: 50%;
     margin: auto;
+}
+
+.icon-space{
+    margin-top: 20px;
 }
 
 h4 {
@@ -614,6 +600,141 @@ h4 {
 }
 
 .a-container {
-    height: 100%;
+    position: relative;
+    width: 83%;
+    margin: 0 auto;
+}
+
+.justify-content {
+    justify-content: space-around;
+}
+
+.a-desc {
+}
+
+@media (max-width: 768px) {
+    .s-row {
+        flex-direction: column;
+    }
+    
+    .bio-img {
+        display: none;
+    }
+    
+    .absolute-bl {
+        display: none;
+    }
+    
+    .absolute-tr {
+        display: none;
+    }
+    
+    .nav-link {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 830px) {
+    .nav-item {
+        display: inline-block;
+    }
+    
+    #vertical-nav {
+        display: contents;
+    }
+}
+
+.resume {
+    position: relative;
+    width: 50%;
+    height: 580px;
+    display: inline-block;
+    margin-left: 100px;
+    float: left;
+}
+
+.float-right {
+    float: right;
+    padding-top: 20px;
+    margin-right: 50px;
+    word-wrap: break-word;
+    line-height: 30px;
+}
+
+.p-top-20 {
+    padding-top: 20px;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.a-subdesc {
+    margin-left: 40px;
+}
+
+/* Contact Area */
+#contact {
+    position: relative;
+    height: auto;
     width: 100%;
+    background-color: #F9FAFB;
+}
+
+.c-container {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.line-block {
+    display: block;
+    margin-top: 20px;
+    margin-left: 49.5%;
+    margin-bottom: 30px;
+}
+
+.c-desc {
+    width: 30%;
+    margin:0 auto;
+    text-align: center;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+
+.email-link {
+    display: block;
+    width: 20%;
+    margin:0 auto;
+    text-decoration: none;
+    font-weight: 600;
+    color: #6EBAFF;
+    font-size: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #C7C7C7;
+    margin-bottom: 10px;
+}
+
+.icons {
+    margin: 0 auto;
+    flex-wrap: wrap;
+    opacity: 0.65;
+}
+
+.facebook, .instagram, .linkedin {
+    height: 1%;
+    width: 1%;
+    padding: 2px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 1px solid #6E6E6E;
+    -webkit-transition: opacity 250ms;
+    -o-transition: opacity 250ms;
+    transition: opacity 250ms;
+}
+
+.facebook:hover, .instagram:hover, .linkedin:hover {
+    opacity: 0.55;
 }

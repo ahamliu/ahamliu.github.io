@@ -8,25 +8,25 @@
     
     <body>
         <!-- Logo -->
-            <div class="navbar-top">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">AL.</a>
-                </div>
-            </div>
-        <ul id="vertical-nav">
-            <li class="nav-item">
-                <a class="nav-link active" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#about">About Me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Resume</a>
-            </li>
-        </ul>
+        <nav class="navbar-top">
+                <a class="navbar-brand" href="#">AL.</a>
+        </nav>
+        <nav>
+            <ul id="vertical-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pdf/Resume.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+        </nav>
         <!-- Vertical Menu Area -->
         <div id="home">
             <a name="home"></a>
@@ -251,54 +251,52 @@
                         <h1 class="h-title3">A UI_UX Designer.</h1>
                         <p class="h-desc">With a strong passion for Web Dev and Design, Data Science, and Illustration!
                         </p>
-                        <a class="contact-button" href="#">Contact</a>
+                        <a class="contact-button" href="#contact">Contact</a>
                     </div>
                     <div class="col-8 bio-img fadeInDown">
-                        <img src="img/bio-img.png" style="height: 300px;" alt="">
+                        <img src="img/bio-img.png" alt="">
                     </div>
                 </div> 
             </div>
         </div>
         <!-- Skill Area -->
-        <div id="skills">
+        <div id="skills" class="s-bottom-space">
             <div class="s-container">
-                <div class="s-area">
-                    <div class="row">
-                        <div class="section-heading">
-                            <h2 class="title-light">My</h2>
-                            <h2 class="title-bold">Skills</h2>
-                            <div class="line-shape"></div>
-                            <p class="s-desc">Lorem Ipsum</p>
+                <div class="row">
+                    <div class="section-heading">
+                        <h2 class="title-light">My</h2>
+                        <h2 class="title-bold">Skills</h2>
+                        <div class="line-shape"></div>
+                        <p class="s-desc">Lorem Ipsum</p>
+                    </div>
+                </div>
+                <div class="s-row justify-content">
+                    <div class="col-2">
+                        <div id="skill1" class="single-skill text-center">
+                            <div class="icon icon-space"></div>
+                            <h4>UI_UX<br>Design.</h4>
+                            <p class="skill-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore.</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <div id="skill1" class="single-skill text-center">
-                                <div class="icon"></div>
-                                <h4>UI_UX<br>Design.</h4>
-                                <p class="skill-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore.</p>
-                            </div>
+                    <div class="col-2">
+                        <div id="skill2" class="single-skill text-center">
+                            <div class="icon icon-space"></div>
+                            <h4>Data<br>Science.</h4>
+                            <p class="skill-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore.</p>
                         </div>
-                        <div class="col-3">
-                            <div id="skill2" class="single-skill text-center">
-                                <div class="icon"></div>
-                                <h4>Data<br>Science.</h4>
-                                <p class="skill-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore.</p>
-                            </div>
+                    </div>
+                    <div class="col-2">
+                        <div id="skill3" class="single-skill text-center">
+                            <div class="icon icon-space"></div>
+                            <h4>Web Dev /<br> Design</h4>
+                            <p class="skill-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore.</p>
                         </div>
-                        <div class="col-3">
-                            <div id="skill3" class="single-skill text-center">
-                                <div class="icon"></div>
-                                <h4>Web Design/Dev.</h4>
-                                <p class="skill-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore.</p>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div id="skill4" class="single-skill text-center">
-                                <div class="icon"></div>
-                                <h4>Illustration Design.</h4>
-                                <p class="skill-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore.</p>
-                            </div>
+                    </div>
+                    <div class="col-2">
+                        <div id="skill4" class="single-skill text-center">
+                            <div class="icon icon-space"></div>
+                            <h4>Illustration<br> Design.</h4>
+                            <p class="skill-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore.</p>
                         </div>
                     </div>
                 </div>
@@ -308,6 +306,37 @@
         <div id="about">
             <a name="about"></a>
             <div class="a-container">
+                <div class="resume"></div>
+                <div class="section-heading p-top-20 absolute">
+                    <h2 class="title-light">About</h2>
+                    <h2 class="title-bold">Me</h2>
+                    <div class="line-shape"></div>
+                    <p class="a-desc  float-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore.</p>
+                    <div class="a-subdesc">
+                        <h3>Subheading</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <h3>Subheading</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Area -->
+        <div id="contact">
+            <a name="contact"></a>
+            <div class="c-container section-heading">
+                <h2 class="title-light">Say</h2>
+                <h2 class="title-bold">Hello</h2>
+                <div class="line-shape line-block"></div>
+                <p class="c-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="mailto:ahamliu@umass.edu" class="email-link">ahamliu@umass.edu</a>
+                <div class="icons">
+                    <a href="#"><img class="facebook" src="img/facebook.svg"></a>
+                    <a href="#"><img class="instagram" src="img/instagram.svg"></a>
+                    <a href="#"><img class="linkedin" src="img/linkedin.svg"></a>
+                </div>
             </div>
         </div>
     </body>
