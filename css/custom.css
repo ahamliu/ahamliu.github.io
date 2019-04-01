@@ -9,6 +9,11 @@ p {
     font-size: 18px;
 }
 
+h3 {
+    color: #3D3C68;
+    font-size: 21px;
+}
+
 /* Nav */
 
 .navbar-brand {
@@ -280,7 +285,7 @@ p {
 .h-title1 {
     font-size: 30px;
     font-weight: 400;
-    color: #3D3C68;
+    color: #726a84;
     margin-top: 0px;
     margin-bottom: 8px;
 }
@@ -294,9 +299,9 @@ p {
 }
 
 .h-title3 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 40px;
-    color: #3D3C68;
+    color: #4CB5FF;
     margin-top: 0px;
     margin-bottom: 8px;
 }
@@ -338,12 +343,6 @@ p {
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.s-row {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -674,6 +673,27 @@ h4 {
     margin-left: 40px;
 }
 
+/* Portfolio Area */
+#portfolio {
+    height: 2000px;
+    width: 100%;
+    position: relative;
+}
+
+.p-container {
+    position: absolute;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.relative {
+    position: relative;
+}
+
+.justify-center {
+    justify-content: center;
+}
 /* Contact Area */
 #contact {
     position: relative;
