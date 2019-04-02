@@ -14,16 +14,16 @@
         <nav>
             <ul id="vertical-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#home">Home</a>
+                    <a class="nav-link active-toggle active" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About Me</a>
+                    <a class="nav-link active-toggle" href="#about">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link active-toggle" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/pdf/Resume.pdf" target="_blank">Resume</a>
+                    <a class="nav-link active-toggle" href="/pdf/Resume.pdf" target="_blank">Resume</a>
                 </li>
             </ul>
         </nav>
@@ -327,39 +327,48 @@
         <section id="portfolio">
             <a name="portfolio"></a>
             <div class="p-container">
-                <div class="section-heading">
+                <div class="section-heading display-block h-margin">
                     <h2 class="title-light">My</h2>
                     <h2 class="title-bold">Portfolio</h2>
                     <div class="line-shape"></div>
                 </div>
                 <div></div>
-                <div class="row justify-center">
-                    <img class="col-6 relative" src="img/project-img1.png">
+                <div class="row project-margin">
                     <div class="col-6">
-                        <h3>Subheading</h3>
-                        <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore.</p>
+                        <img class="project-img" src="img/project-img1.png">
+                    </div>
+                    <div class="col-6 justify-center">
+                        <h3 class="p-heading-left">Recycling App Design</h3>
+                        <p class="p-desc-left1 margin-left-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore.</p>
+                        <a class="p-button margin-left-7" href="#">Read More</a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-6">
-                        <h3>Subheading</h3>
-                        <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore.</p>
+                <div class="row project-margin">
+                    <div class="col-6 justify-center">
+                        <h3 class="p-heading-right text-align-right">Portfolio Design</h3>
+                        <p class="p-desc-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore.</p>
+                        <a class="p-button2 margin-right-11" href="#">Read More</a>
                     </div>
-                    <img class="col-6 project-img" src="img/project-img2.png">
+                     <div class="col-6">
+                        <img class="project-img" src="img/project-img2.png">
+                    </div>
                 </div>
-                <div class="row">
-                    <img class="col-6 project-img" src="img/project-img3.png">
+                <div class="row h-margin">
                     <div class="col-6">
-                        <h3>Subheading</h3>
-                        <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore.</p>
+                        <img class="project-img" src="img/project-img3.png">
+                    </div>
+                    <div class="col-6 justify-center">
+                        <h3 class="p-heading-left">Travel Guide Design</h3>
+                        <p class="p-desc-left2 margin-left-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore.</p>
+                        <a class="p-button margin-left-7" href="#">Read More</a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Contact Area -->
-        <section id="contact">
+        <footer id="contact">
             <a name="contact"></a>
-            <div class="c-container section-heading">
+            <div class="section-heading">
                 <h2 class="title-light">Say</h2>
                 <h2 class="title-bold">Hello</h2>
                 <div class="line-shape line-block"></div>
@@ -371,6 +380,17 @@
                     <a href="#"><img class="linkedin" src="img/linkedin.svg"></a>
                 </div>
             </div>
-        </section>
+        </footer>
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            $(function(){
+                $('.active-toggle').each(function(index, value){
+                    $(this).click(function(){
+                        $(".active-toggle").removeClass("active");
+                        $(this).addClass("active");
+                    })   
+                });
+            });
+        </script>
     </body>
 </html>

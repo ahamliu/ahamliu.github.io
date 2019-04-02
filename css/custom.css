@@ -6,7 +6,7 @@ body {
 
 p {
     color: #6C6B7B;
-    font-size: 18px;
+    font-size: calc(14px + 0.3vw);
 }
 
 h3 {
@@ -283,7 +283,7 @@ h3 {
 }
 
 .h-title1 {
-    font-size: 30px;
+    font-size: calc(5px + 1vw);
     font-weight: 400;
     color: #726a84;
     margin-top: 0px;
@@ -291,7 +291,7 @@ h3 {
 }
 
 .h-title2 {
-    font-size: 60px;
+    font-size: calc(42px + 1vw);
     color: #3D3C68;
     font-weight: 800;
     margin-top: 0px;
@@ -299,41 +299,56 @@ h3 {
 }
 
 .h-title3 {
+    position: relative;
     font-weight: 500;
-    font-size: 40px;
-    color: #4CB5FF;
+    font-size: calc(25px + 1vw);
+    color: #3D3C68;
+    margin-right: 150px;
     margin-top: 0px;
     margin-bottom: 8px;
 }
 
 .h-desc {
-    margin-top: 20px;
+    margin-top: 30px;
     line-height: 28px;
     border-left: 4px solid #4CB5FF;
     padding-left: 20px;
+    margin-bottom: 5%;
 }
 
 .contact-button {
-    background-color: #4CB5FF;
-    color: #fff;
-    font-weight: 600;
-    border: none;
-    height: 50px;
-    width: 150px;
-    line-height: 50px;
-    text-align: center;
-    border-radius: 24px;
-    margin-top: 40px;
+    position: relative;
     text-decoration: none;
-    display: block;
-    letter-spacing: 0.03em;
-    -webkit-transition: background-color 500ms;
-    -o-transition: background-color 500ms;
-    transition: background-color 500ms;
+    color: #3D3C68;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin-top: 3%;
+    -webkit-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s;
+    text-transform: uppercase;
 }
 
-.contact-button:hover {
-    background-color: #6FC3FF;
+.contact-button:before, .contact-button:after{
+    content: '';
+    height: 1em;
+    position: absolute;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.contact-button:after {
+    left: 1rem;
+    right: 0;
+    top: 0.6rem;
+    background: #FDB92D;
+    width: 105%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.contact-button:hover:after {
+    top: 0.4rem;
+    left: 0;
 }
 
 .container {
@@ -471,7 +486,7 @@ h3 {
 #skills {
     height: auto;
     width: 100%;
-    background-color: #F9FAFB;
+    /*background-color: #F9FAFB;*/
     padding-bottom: 30px;
 }
 
@@ -594,7 +609,7 @@ h4 {
 /* About Me Area */
 #about {
     position: relative;
-    height: 580px;
+    height: 560px;
     width: 100%;
 }
 
@@ -611,12 +626,17 @@ h4 {
 .a-desc {
 }
 
+@media (max-width: 700px) {
+    .bio-img {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     .s-row {
         flex-direction: column;
     }
-    
-    .bio-img {
+    .col-2 {
         display: none;
     }
     
@@ -675,13 +695,12 @@ h4 {
 
 /* Portfolio Area */
 #portfolio {
-    height: 2000px;
+    height: auto;
     width: 100%;
     position: relative;
 }
 
 .p-container {
-    position: absolute;
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
@@ -691,20 +710,152 @@ h4 {
     position: relative;
 }
 
+.h-margin {
+    margin-bottom: 5%;
+}
+
+.display-block {
+    display: block;
+}
+
 .justify-center {
     justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
+
+.project-margin {
+    margin-bottom: 10%;
+}
+
+.project-img {
+    width: 100%;
+}
+
+.p-heading-left {
+    font-size: calc(15px + 2vw);
+    padding-left: 7%;
+    margin-bottom: 10px;
+}
+
+.p-heading-right {
+    font-size: calc(15px + 2vw);
+    padding-right: 11%;
+    margin-bottom: 10px;
+}
+
+.text-align-right {
+    text-align: right;
+    margin-right 11%;
+}
+
+.p-desc-left1, .p-desc-left2 {
+    width: 85%;
+    padding-left: 3%;
+}
+
+.p-desc-left1 {
+    border-left: 4px solid rgba(246,213,177,1);
+}
+
+.p-desc-left2 {
+    border-left: 4px solid rgba(255,182,182,1);
+}
+
+.p-desc-right {
+    margin-right: 7%;
+    width: 85%;
+    text-align: right;
+    padding-right: 3%;
+    border-right: 4px solid #4CB5FF;
+}
+
+.margin-left-7 {
+    margin-left: 7%;
+}
+
+.margin-right-11 {
+    margin-right: 11%;
+    text-align: right;
+}
+
+.p-button {
+    position: relative;
+    text-decoration: none;
+    color: #3D3C68;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin-top: 3%;
+    -webkit-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s;
+    text-transform: uppercase;
+}
+
+.p-button:before, .p-button:after{
+    content: '';
+    height: 1em;
+    position: absolute;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.p-button:after {
+    left: 1rem;
+    right: 0;
+    top: 0.6rem;
+    background: #FDB92D;
+    width: 18%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.p-button:hover:after {
+    top: 0.4rem;
+    left: 0;
+}
+
+.p-button2 {
+    position: relative;
+    text-decoration: none;
+    color: #3D3C68;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin-top: 3%;
+    -webkit-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s;
+    text-transform: uppercase;
+}
+
+.p-button2:before, .p-button2:after{
+    content: '';
+    height: 1em;
+    position: absolute;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.p-button2:after {
+    left: 29.5rem;
+    right: 0;
+    top: 0.6rem;
+    background: #FDB92D;
+    width: 18%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.p-button2:hover:after {
+    top: 0.4rem;
+    left: 30.2rem;
+}
+
+
 /* Contact Area */
 #contact {
     position: relative;
     height: auto;
     width: 100%;
     background-color: #F9FAFB;
-}
-
-.c-container {
-    width: 100%;
-    position: relative;
     text-align: center;
 }
 
@@ -712,14 +863,15 @@ h4 {
     display: block;
     margin-top: 20px;
     margin-left: 49.5%;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .c-desc {
     width: 30%;
     margin:0 auto;
     text-align: center;
-    line-height: 35px;
+    font-size: 0.7em;
+    line-height: 30px;
     margin-bottom: 10px;
 }
 
@@ -730,8 +882,8 @@ h4 {
     text-decoration: none;
     font-weight: 600;
     color: #6EBAFF;
-    font-size: 20px;
-    padding-bottom: 40px;
+    font-size: 0.8em;
+    padding-bottom: 30px;
     border-bottom: 1px solid #C7C7C7;
     margin-bottom: 10px;
 }
