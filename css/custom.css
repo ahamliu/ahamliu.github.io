@@ -301,8 +301,8 @@ h3 {
 .h-title3 {
     position: relative;
     font-weight: 500;
-    font-size: calc(25px + 1vw);
-    color: #3D3C68;
+    font-size: calc(23px + 1vw);
+    color: #4ca3ff;
     margin-right: 150px;
     margin-top: 0px;
     margin-bottom: 8px;
@@ -329,14 +329,11 @@ h3 {
     text-transform: uppercase;
 }
 
-.contact-button:before, .contact-button:after{
+.contact-button:before{
     content: '';
     height: 1em;
     position: absolute;
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.contact-button:after {
     left: 1rem;
     right: 0;
     top: 0.6rem;
@@ -346,9 +343,29 @@ h3 {
     opacity: 0.3;
 }
 
-.contact-button:hover:after {
+.contact-button:after {
+    content: '';
+    height: 1.5em;
+    width: 1.5em;
+    background-image: url(../img/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0.2em;
+    bottom: 0.02%;
+    top: 0.02%;
+    position: absolute;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.contact-button:hover:before {
     top: 0.4rem;
     left: 0;
+}
+
+.contact-button:hover:after {
+    top: 0;
+    bottom: 0;
+    margin-left: 0;
 }
 
 .container {
@@ -486,15 +503,20 @@ h3 {
 #skills {
     height: auto;
     width: 100%;
-    /*background-color: #F9FAFB;*/
+    background-image: url("../img/5.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
     padding-bottom: 30px;
 }
 
-/* #skills-background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}  if I want to use a background image in the future */
+.d-flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
 
 .s-container {
     position: relative;
@@ -527,10 +549,6 @@ h3 {
     background-color: #4CB5FF;
     margin-top: 15px;
     display: inline-block;
-}
-
-.s-desc {
-    margin-top: 5px;
 }
 
 .single-skill {
@@ -623,9 +641,6 @@ h4 {
     justify-content: space-around;
 }
 
-.a-desc {
-}
-
 @media (max-width: 700px) {
     .bio-img {
         display: none;
@@ -633,11 +648,8 @@ h4 {
 }
 
 @media (max-width: 768px) {
-    .s-row {
+    .sm-flex-column {
         flex-direction: column;
-    }
-    .col-2 {
-        display: none;
     }
     
     .absolute-bl {
@@ -667,10 +679,88 @@ h4 {
 .resume {
     position: relative;
     width: 50%;
-    height: 580px;
+    height: 400px;
+    vertical-align: top;
     display: inline-block;
     margin-left: 100px;
     float: left;
+    margin-top: 8%;
+    text-align: center;
+}
+
+.resume-img {
+    width: 35%;
+    height: 80%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    box-shadow: -15px 15px rgba(0, 0, 0, 0.5);
+    
+}
+
+.resume-img:hover {
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.r-button {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #3D3C68;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    -webkit-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s;
+    text-transform: uppercase;
+    width: 20%;
+    margin-left: 35%;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.r-button:before {
+    content: '';
+    height: 1em;
+    left: 1rem;
+    margin-left: 21%;
+    right: 0;
+    top: 0.6rem;
+    background: #FDB92D;
+    z-index: -1;
+    opacity: 0.3;
+    position: absolute;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.r-button:after {
+    content: '';
+    height: 1.5em;
+    width: 1.5em;
+    background-image: url(../img/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0.2em;
+    bottom: 0.02%;
+    top: 0.02%;
+    position: absolute;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.r-button:hover{
+    margin-left: 40%;
+}
+
+.r-button:hover:before {
+    top: 0.4rem;
+    left: 0;
+    margin-right: 10%;
+}
+
+.r-button:hover:after {
+    top: 0;
+    bottom: 0;
+    margin-left: 0;
 }
 
 .float-right {
@@ -728,8 +818,14 @@ h4 {
     margin-bottom: 10%;
 }
 
-.project-img {
+.project-img-left {
     width: 100%;
+    box-shadow: -10px 5px 10px rgba(0, 0, 0, 0.02);
+}
+
+.project-img-right {
+    width: 100%;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.02);
 }
 
 .p-heading-left {
@@ -751,6 +847,7 @@ h4 {
 
 .p-desc-left1, .p-desc-left2 {
     width: 85%;
+    line-height: 1.5em;
     padding-left: 3%;
 }
 
@@ -765,6 +862,7 @@ h4 {
 .p-desc-right {
     margin-right: 7%;
     width: 85%;
+    line-height: 1.5em;
     text-align: right;
     padding-right: 3%;
     border-right: 4px solid #4CB5FF;
@@ -792,14 +890,9 @@ h4 {
     text-transform: uppercase;
 }
 
-.p-button:before, .p-button:after{
+.p-button:before {
     content: '';
     height: 1em;
-    position: absolute;
-    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.p-button:after {
     left: 1rem;
     right: 0;
     top: 0.6rem;
@@ -807,11 +900,33 @@ h4 {
     width: 18%;
     z-index: -1;
     opacity: 0.3;
+    position: absolute;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.p-button:after {
+    content: '';
+    height: 1.5em;
+    width: 1.5em;
+    background-image: url(../img/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0.2em;
+    bottom: 0.02%;
+    top: 0.02%;
+    position: absolute;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.p-button:hover:before {
+    top: 0.4rem;
+    left: 0;
 }
 
 .p-button:hover:after {
-    top: 0.4rem;
-    left: 0;
+    top: 0;
+    bottom: 0;
+    margin-left: 0;
 }
 
 .p-button2 {
@@ -827,15 +942,12 @@ h4 {
     text-transform: uppercase;
 }
 
-.p-button2:before, .p-button2:after{
+.p-button2:after {
     content: '';
     height: 1em;
     position: absolute;
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.p-button2:after {
-    left: 29.5rem;
+    margin-right: 1rem;
     right: 0;
     top: 0.6rem;
     background: #FDB92D;
@@ -844,11 +956,33 @@ h4 {
     opacity: 0.3;
 }
 
-.p-button2:hover:after {
-    top: 0.4rem;
-    left: 30.2rem;
+.p-button2:before {
+    content: '';
+    height: 1.5em;
+    width: 1.5em;
+    background-image: url(../img/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -25px;
+    position: absolute;
+    transform: scale(-1, 1);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+.p-button2:hover:after {
+    top: 0.4rem;
+    margin-right: 0.05rem;
+}
+
+.p-button2:hover:before {
+    top: 0;
+    bottom: 0;
+    margin-left: -21px;
+}
+
+.p-link {
+    text-decoration: none;
+}
 
 /* Contact Area */
 #contact {
@@ -861,23 +995,22 @@ h4 {
 
 .line-block {
     display: block;
-    margin-top: 20px;
-    margin-left: 49.5%;
+    margin: 0 auto;
+    margin-top: 10px;
     margin-bottom: 15px;
 }
 
 .c-desc {
-    width: 30%;
+    width: 100%;
     margin:0 auto;
-    text-align: center;
-    font-size: 0.7em;
+    font-size: 0.6em;
     line-height: 30px;
     margin-bottom: 10px;
 }
 
 .email-link {
     display: block;
-    width: 20%;
+    width: 50%;
     margin:0 auto;
     text-decoration: none;
     font-weight: 600;
@@ -886,6 +1019,13 @@ h4 {
     padding-bottom: 30px;
     border-bottom: 1px solid #C7C7C7;
     margin-bottom: 10px;
+    -webkit-transition: color 250ms;
+    -o-transition: color 250ms;
+    transition: color 250ms;
+}
+
+.email-link:hover {
+    color: #96cdff;
 }
 
 .icons {
@@ -894,9 +1034,9 @@ h4 {
     opacity: 0.65;
 }
 
-.facebook, .instagram, .linkedin {
-    height: 1%;
-    width: 1%;
+.instagram, .linkedin, .github {
+    height: 4%;
+    width: 4%;
     padding: 2px;
     border-radius: 50%;
     margin-right: 10px;
@@ -907,6 +1047,6 @@ h4 {
     transition: opacity 250ms;
 }
 
-.facebook:hover, .instagram:hover, .linkedin:hover {
+.instagram:hover, .linkedin:hover, .github:hover{
     opacity: 0.55;
 }
