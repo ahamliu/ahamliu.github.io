@@ -271,7 +271,7 @@ h3 {
 }
 
 .h-desc {
-    margin-top: 30px;
+    margin-top: 10px;
     line-height: 28px;
     border-left: 4px solid #4CB5FF;
     padding-left: 20px;
@@ -572,12 +572,39 @@ h3 {
     text-align: center;
 }
 
-.icon {
-    height: 70px;
-    width: 70px;
-    background-color: #E8E8E8;
-    border-radius: 50%;
+.icon-ui, .icon-data, .icon-web, .icon-illustration {
+    height: 80px;
+    width: 80px;
+    /* background-color: #E8E8E8;
+    border-radius: 50%; */
     margin: auto;
+    background-size: cover;
+}
+
+.icon-ui {
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/ux.svg");
+    background-color: rgba(156,208,255, 1);
+    border-radius: 50%;
+}
+
+.icon-data {
+    background-image: url("../img/stats.svg");
+}
+
+.icon-web {
+    background-image: url("../img/web-dev.svg");
+}
+
+.icon-illustration {
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/illustration.svg");
+    background-color: rgba(149,219,202, 1);
+    border-radius: 50%;
 }
 
 .icon-space{
@@ -651,17 +678,13 @@ h4 {
 }
 
 .resume-img {
-    width: 250px;
-    height: 320px;
-    margin-left: 200px;
+    width: 300px;
+    margin-left: 300px;
     margin-right: 50px;
-    border-radius: 25px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: -15px 15px #d4deeb;
 }
 
 .r-button {
-    margin-left: 130px;
+    margin-left: 250px;
     position: relative;
     display: block;
     text-decoration: none;
@@ -673,7 +696,7 @@ h4 {
     transition: color 0.4s;
     text-transform: uppercase;
     width: 120px;
-    margin-top: 40px;
+    margin-top: 20px;
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
@@ -742,6 +765,22 @@ h4 {
 .a-desc {
     font-size: calc(16px + 0.2vw);
     line-height: 1.7em;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.check-mark {
+    margin-top: 21px;
+    border-radius: 50px;
+    border: 2px dotted #B7B7B7;
+    margin-right: 10px;
+    width: 30px;
+}
+
+.bullet {
+    margin-left: 45px;
+    margin-right: 20px;
+    width: 20px;
 }
 
 /* Portfolio Area */
@@ -951,6 +990,9 @@ h4 {
     height: auto;
     width: 100%;
     text-align: center;
+    background-image: url("../img/wave.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
 
 .line-block {
@@ -1088,6 +1130,15 @@ h4 {
 
 .r-link {
     text-decoration: none;
+    font-weight: 600;
+    color: #6EBAFF;
+    -webkit-transition: color 250ms;
+    -o-transition: color 250ms;
+    transition: color 250ms;
+}
+
+.r-link:hover {
+    color: #96cdff;
 }
 
 .progress-bar {
