@@ -34,13 +34,17 @@
         <!-- Resume Area -->
         <section id="resume">
             <div class="r-container">
-                <div class="resume-headings">
+                <div class="resume-headings animated fadeInLeft">
                     <h2 class="r-title">Resume</h2>
                     <h3 class="r-title r-title2">.</h3>
                 </div>
-                <div class="row">
+                <div class="row animated fadeInLeft anim-delay-5ms">
                     <div class="col-4">
-                        <p class="r-desc">Hello! I'm <b>Amy Ham Liu</b>, a designer enthusiast and developer who loves bringing creative and empathetic solutions to problems. </p>
+                        <div class="r-info">
+                            <p class="r-desc">Hello! I'm</p>
+                            <p class="r-name">Amy Ham Liu</p>
+                            <p class="r-desc">, a designer enthusiast and developer who loves bringing creative and empathetic solutions to problems. </p>
+                        </div>
                     </div>
                     <div class="col-2"></div>
                     <div class="col-1">
@@ -49,92 +53,86 @@
                         <h4 class="r-subtitle">link</h4>
                     </div>
                     <div class="col-5">
-                        <p class="r-subinfo">ahamliu@umass.edu</p>
-                        <img src="img/location.svg">
+                        <a href="mailto:ahamliu@umass.edu" class="r-email-link">ahamliu@umass.edu</a>
+                        <img class="location-icon" src="img/location.svg">
                         <p class="r-subinfo display-inline">Boston, USA</p>
                         <div class="r-subinfo r-links">
-                            <a class="r-link" href="https://www.linkedin.com/in/amy-liu-ba4164147" target="_blank">LinkedIn</a>
-                            <a class="r-link" href="https://github.com/ahamliu" target="_blank">Github</a>
+                            <a href="https://www.linkedin.com/in/amy-liu-ba4164147" target="_blank"><img class="linkedin hw-25" src="img/linkedin.svg"></a>
+                            <a href="https://github.com/ahamliu" target="_blank"><img class="github hw-25" src="img/github.svg"></a>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-6">
+                <div class="row animated fadeInLeft anim-delay-15ms">
+                    <div class="col-3">
                         <h2 class="display-inline r-num">01.</h2>
                         <h3 class="display-inline r-heading">Skills</h3>
                         <div>
-                            <h4 class="r-subcat">Design</h4>
-                            <div>
-                                <span>Adobe XD</span>
-                                <div class="progress-bar">
-                                    <span style="width: 80%"></span>
-                                </div>
+                            <div class="align-center">
+                                <img src="img/check-mark.svg" class="r-check check-mark">
+                                <h4 class="r-subcat display-inline">Design.</h4>
                             </div>
-                            <div>
-                                 <span>Photoshop</span>
-                                <div class="progress-bar">
-                                    <span style="width: 90%"></span>
-                                </div>
-                            </div>
-                            <div>
-                                 <span>Illustrator</span>
-                                <div class="progress-bar">
-                                    <span style="width: 70%"></span>
-                                </div>
+                            <div class="pl-40">
+                                <p>Adobe XD</p>
+                                <p>Photoshop</p>
                             </div>
                         </div>
                         <div>
-                            <h4 class="r-subcat">Development</h4>
-                            <div>
-                                <span>HTML/CSS</span>
-                                <div class="progress-bar">
-                                    <span style="width: 70%"></span>
-                                </div>
+                            <div class="align-center">
+                                <img src="img/check-mark.svg" class="r-check check-mark">
+                                <h4 class="r-subcat display-inline">Development.</h4>
                             </div>
-                            <div>
-                                <span>JavaScript</span>
-                                <div class="progress-bar">
-                                    <span style="width: 60%"></span>
-                                </div>
+                            <div class="pl-40">
+                                <p>JavaScript</p>
+                                <p>Java</p>
+                                <p>HTML/CSS</p>
+                                <p>React.js</p>
                             </div>
-                            <div>
-                                <span>Android Studio</span>
-                                <div class="progress-bar">
-                                    <span style="width: 70%"></span>
-                                </div>
+                            <div class="align-center">
+                                <img src="img/check-mark.svg" class="r-check check-mark">
+                                <h4 class="r-subcat display-inline">Data Science.</h4>
                             </div>
-                            <div>
-                                <span>SQL</span>
-                                <div class="progress-bar">
-                                    <span style="width: 65%"></span>
-                                </div>
+                            <div class="pl-40">
+                                <p>R</p>
+                                <p>Python</p>
+                                <p>Tableau</p>
                             </div>
-                            <div>
-                                <span>Git</span>
-                                <div class="progress-bar">
-                                    <span style="width: 85%"></span>
-                                </div>
-                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="r-design">
+                            <p>Illustrator</p>
+                            <p>After Effects</p>
+                        </div>
+                        <div class="r-dev">
+                            <p>Node.js</p>
+                            <p>Android Studio</p>
+                            <p>SQL</p>
+                            <p>Git</p>
+                        </div>
+                        <div class="r-data">
+                            <p>XLMiner</p>
+                            <p>Excel</p>
+                            <p>SAP</p>
                         </div>
                     </div>
                     <div class="col-6 r-padding">
                         <h2 class="display-inline r-num">02.</h2>
                         <h3 class="display-inline r-heading margin-bottom-10">Projects</h3>
-                        <div class="r-project">
+                        <div class="r-project1">
                             <img class="r-project-img" src="img/project-img1.png">
                             <p class="r-project-desc justify-center">A functional tracking app that incentivizes recycling as a study of human computer interaction.</p>
                         </div>
-                        <div class="r-project">
+                        <div class="r-project2">
                             <img class="r-project-img" src="img/project-img2.png">
                             <p class="r-project-desc justify-center">A design process that explores the use of various elements in a personal portfolio website.</p>
                         </div>
-                        <div class="r-project">
+                        <div class="r-project3">
                             <img class="r-project-img" src="img/project-img3.png">
                             <p class="r-project-desc justify-center">A travel website focused on a pleasant user experience through minimal yet elegant interactions and visuals.</p>
                         </div>
                     </div>
                 </div>
-                 <div class="row">
+                 <div class="row animated fadeInLeft anim-delay-15ms">
                     <div class="col-6 r-line r-right-text r-padding">
                         <h2 class="display-inline r-num">03.</h2>
                         <h3 class="display-inline r-heading">Education</h3>
