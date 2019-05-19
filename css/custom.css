@@ -39,9 +39,13 @@ h3 {
     z-index: 99;
 }
 
+#vertical-nav-container {
+    height: 100%;
+}
+
 #vertical-nav {
     list-style-type: none;
-    bottom: calc(50% - 120px);
+    top: calc(50vh - 210px);
     padding-left: 25px;
     z-index: 99;
 }
@@ -205,7 +209,8 @@ h3 {
 }
 
 .bio-img {
-    padding-left: 20px;
+    margin-left: 150px;
+    border-radius: 50%;
 }
 
 .h-title1 {
@@ -296,9 +301,9 @@ h3 {
 }
 
 .container {
-    padding-top: 210px;
+    padding-top: 11%;
     padding-left: 0px;
-    padding-right: 100px;
+    padding-right: 5%;
 }
 
 .row {
@@ -605,7 +610,7 @@ h4 {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 945px) {
     .sm-flex-column {
         flex-direction: column;
     }
@@ -621,6 +626,20 @@ h4 {
     .nav-link {
         margin-left: 10px;
         margin-right: 10px;
+    }
+    .a-container {
+        width: 100%;
+    }
+    .p-top-20 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .resume-img {
+        width: 50%;
+        height: 10%;
+    }
+    .a-subdesc {
+        margin-left: 0px;
     }
 }
 
@@ -643,13 +662,13 @@ h4 {
 }
 
 .resume-img {
-    width: 300px;
-    margin-left: 300px;
-    margin-right: 50px;
+    width: 200%;
+    height: 100%;
+    margin-right: 10%;
 }
 
 .r-button {
-    margin-left: 250px;
+    margin-left: 25%;
     position: relative;
     display: block;
     text-decoration: none;
@@ -1013,8 +1032,8 @@ h4 {
 }
 
 .instagram, .linkedin, .github {
-    height: 4%;
-    width: 4%;
+    height: 7%;
+    width: 7%;
     padding: 2px;
     border-radius: 50%;
     margin-right: 10px;
@@ -1374,7 +1393,7 @@ span {
     text-align: center;
     color: #fff;
     opacity: 0;
-    font-size: calc(5px +1vw);
+    font-size: calc(5px + 1vw);
     transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     cursor: pointer;
 }
